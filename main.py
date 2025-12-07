@@ -1,3 +1,10 @@
+# """
+# projekt3, main.py: třetí projekt do Engeto Online kurzu Tester s Pythonem
+
+# author: Ivana Molnárová
+# email: ivaryd@post.cz
+# """
+
 import argparse
 import csv
 from requests import get
@@ -122,7 +129,7 @@ def check_error_url(url):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", type=str, required=True)
-    parser.add_argument("--file_name", type=str, required=True)
+    parser.add_argument("--file_name", type=str, required=True, help="File name, including the .csv extension.")
     args = parser.parse_args()
     chceck_input_arguments(args.url, args.file_name)
     check_error_url(args.url)
