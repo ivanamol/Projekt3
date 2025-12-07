@@ -1,3 +1,10 @@
+# """
+# projekt3, main.py: třetí projekt do Engeto Online kurzu Tester s Pythonem
+
+# author: Ivana Molnárová
+# email: ivaryd@post.cz
+# """
+
 import argparse
 import csv
 from requests import get
