@@ -75,7 +75,10 @@ def getting_political_parties_data(soup: BeautifulSoup) -> dict:
     result_of_politicial_parties = {}
     for index in range(1, 3):
         for tr in table[index].find_all("tr")[2:]:
-            result_of_politicial_parties[tr.find_all("td")[1].get_text()] = tr.find_all("td")[2].get_text()
+            key = tr.find_all("td")[1].get_text().strip("-")
+            value = tr.find_all("td")[2].get_text().strip("-")
+            if key and value:
+                result_of_politicial_parties[key] = value
     return result_of_politicial_parties
 
 
