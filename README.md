@@ -9,14 +9,14 @@ V kódu použité knihovny jsou uloženy v souboru [requirements.txt](requiremen
 $ pip --version                    # overim verzi manazeru
 $ pip install -r requirements.txt  # nainstalujeme knihovny
 ```
-# Spuštění projektu
+## Spuštění projektu
 Spuštění souboru `main.py` v rámci příkazové řádky požaduje dva povinné argumenty. Využívá se knihovny argparse. Jméno souboru se zadává s příponou .csv
 ```
 python main.py --url <odkaz-uzemniho-celku> --file_name <vysledny-soubor>
 ```
 
 Následně se výsledky stáhnou jakou soubor s příponou `.csv`.
-# Ukázka projektu
+## Ukázka projektu
 Výsledky hlasování pro okres Prostějov:
 1. argument `https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103`
 2. argument `vysledky_prostejov.csv`
