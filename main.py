@@ -7,9 +7,10 @@
 
 import argparse
 import csv
-from requests import get
-from bs4 import BeautifulSoup
 import sys
+from bs4 import BeautifulSoup
+from requests import get
+
 
 def getting_soup(url: str) -> BeautifulSoup:
     """
